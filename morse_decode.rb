@@ -15,7 +15,7 @@ end
 
 morse_code1 = ".-"
 decoded_string = decode_string(morse_code1)
-puts decoded_message
+puts decoded_string
 
 
 # Decoding word
