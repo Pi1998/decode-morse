@@ -27,3 +27,9 @@ decoded_word = decode_word(morse_code2)
 puts decoded_word
 
 # Decoding message
+def decode_message(morse_message)
+  morse_message.split('   ').map { |morse_word| decode_word(morse_word) }.join('   ')
+end
+morse_code3 = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+decoded_message = decode_message(morse_code3)
+puts decoded_message
